@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Лузан](https://up.htmlacademy.ru/htmlcss/36/user/2191783).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
