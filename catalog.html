@@ -43,7 +43,148 @@
     </header>
 
     <main class="main-content">
+      <div class="filter-and-header-wrapper">
+        <header class="main-header">
+          <h1 class="title main-header-title">Гостиницы Седоны</h1>
+          <ol class="breadcrumbs">
+            <li class="breadcrumbs_item">
+              <a class="breadcrumbs_link">
+                <span class="vissualy-hidden">Главная</span>
+              </a>
+            </li>
+            <li class="breadcrumbs_item">
+              <a class="breadcrumbs_link">Гостиницы</a>
+            </li>
+          </ol>
+          <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="hotel-filter_option">
+              <legend>Инфраструктура:</legend>
+              <p class="hotel-filter_input-field">
+                <input type="checkbox" name="hotel-option-pool" id="hotel-option-pool" checked>
+                <label for="hotel-option-pool">Бассейн</label>
+              </p>
+              <p class="hotel-filter_input-field">
+                <input type="checkbox" name="hotel-option-parking" id="hotel-option-parking" checked>
+                <label for="hotel-option-parking">Парковка</label>
+              </p>
+              <p class="hotel-filter_input-field">
+                <input type="checkbox" name="hotel-option-wifi" id="hotel-option-wifi">
+                <label for="hotel-option-wifi">Wi-Fi</label>
+              </p>
+            </fieldset>
+            <fieldset class="hotel-filter_type">
+              <legend>Тип Жилья:</legend>
+              <p class="hotel-filter_input-field">
+                <input type="radio" name="hotel-type" value="hotel" id="hotel-type-hotel">
+                <label for="hotel-type-hotel">Гостиница</label>
+              </p>
+              <p class="hotel-filter_input-field">
+                <input type="radio" name="hotel-type" value="motel" id="hotel-type-motel">
+                <label for="hotel-type-motel">Мотель</label>
+              </p>
+              <p class="hotel-filter_input-field">
+                <input type="radio" name="hotel-type" value="apartment" id="hotel-type-apartment">
+                <label for="hotel-type-apartment">Апартаменты</label>
+              </p>
+            </fieldset>
+            <fieldset class="hotel-filter_type">
+              <legend>Стоимость, &#8381;:</legend>
+              <!--Ползунки с ценой и текстовые поля с номером чуть позже-->
+            </fieldset>
+            <button class="button hotel-filter_button" type="submit">Применить</button>
+            <button class="button hotel-filter_button" type="clear">Сбросить</button>
+          </form>
+        </header>
+      </div>
 
+      <section class="hotels">
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <span class="searh-result">Найдено гостиниц: 38</span>
+          <select class="sorting">
+            <option class="sorting-item">Сначала дешевые</option>
+            <option class="sorting-item">Сначала дорогие</option>
+            <option class="sorting-item">Популярные</option>
+          </select>
+          <a class="button preview-button-current" href="#">
+            <span class="visually-hidden">Отобразить сеткой</span>
+          </a>
+          <a class="button preview-button" href="#">
+            <span class="visually-hidden">Отобразить карточками</span>
+          </a>
+          <a class="button preview-button" href="#">
+            <span class="visually-hidden">Отобразить списком</span>
+          </a>
+
+          <ul class="products-list">
+            <li class="product-card">
+              <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы Amara Resort & Spa" width="300" height="212">
+              <h3 class="product-name">Amara Resort & Spa</h3>
+              <div class="product-info-wrapper">
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 4000 &#8381;</span>
+              </div>
+              <div class="product-button-wrapper">
+                <a class="button product-link">Подробнее</a>
+                <button class="button button-favorites" type="button">В избранное</button>
+              </div>
+              <div class="product-rating">
+                <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 4 звезды" width="140" height="37">
+                <span class="hotel-rating">Рейтинг: 8,5</span>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы Villas at Poco Diablo" width="300" height="212">
+              <h3 class="product-name">Villas at Poco Diablo</h3>
+              <div class="product-info-wrapper">
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 5000 &#8381;</span>
+              </div>
+              <div class="product-button-wrapper">
+                <a class="button product-link">Подробнее</a>
+                <button class="button button-favorites-active" type="button">В избранное</button>
+              </div>
+              <div class="product-rating">
+                <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 4 звезды" width="140" height="37">
+                <span class="hotel-rating">Рейтинг: 9,2</span>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы Desert Quail Inn" width="300" height="212">
+              <h3 class="product-name">Desert Quail Inn</h3>
+              <div class="product-info-wrapper">
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 2500 &#8381;</span>
+              </div>
+              <div class="product-button-wrapper">
+                <a class="button product-link">Подробнее</a>
+                <button class="button button-favorites" type="button">В избранное</button>
+              </div>
+              <div class="product-rating">
+                <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 3 звезды" width="140" height="37">
+                <span class="hotel-rating">Рейтинг: 6,9</span>
+              </div>
+            </li>
+
+            <li class="product-card">
+              <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы GreenTree Inn" width="300" height="212">
+              <h3 class="product-name">GreenTree Inn</h3>
+              <div class="product-info-wrapper">
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 1500 &#8381;</span>
+              </div>
+              <div class="product-button-wrapper">
+                <a class="button product-link">Подробнее</a>
+                <button class="button button-favorites" type="button">В избранное</button>
+              </div>
+              <div class="product-rating">
+                <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 2 звезды" width="140" height="37">
+                <span class="hotel-rating">Рейтинг: 5,0</span>
+              </div>
+            </li>
+          </ul>
+      </section>
     </main>
 
     <footer class="main-footer">
