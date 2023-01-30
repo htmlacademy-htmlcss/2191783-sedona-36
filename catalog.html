@@ -10,7 +10,7 @@
 
     <header class="page-header">
       <a class="logo-link" href="index.html">
-        <img class="logo" src="img/placeholder.svg" alt="Логотип городка Седона" width="140" height="70">
+        <img class="logo" src="img/main/logo.svg" alt="Логотип городка Седона." width="140" height="70">
       </a>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
@@ -48,7 +48,7 @@
     <main class="main-content">
       <div class="filter-and-header-wrapper">
 
-        <!--Шапка страницыы-->
+        <!--Шапка страницы-->
 
         <header class="main-header">
           <h1 class="title main-header-title">Гостиницы Седоны</h1>
@@ -66,7 +66,7 @@
 
         <!--Фильтр-->
 
-        <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="hotel-filter-option">
             <legend>Инфраструктура:</legend>
             <p class="hotel-filter-input-field">
@@ -110,84 +110,88 @@
 
       <!--Управление сортировкой и отображением страницы-->
 
-      <h2 class="visually-hidden">Список гостиниц</h2>
-      <div class="hotel-results-wrapper">
-        <span class="searh-result">Найдено гостиниц: 38</span>
-        <select class="sorting" aria-label="Сортировка">
-          <option class="sorting-item">Сначала дешевые</option>
-          <option class="sorting-item">Сначала дорогие</option>
-          <option class="sorting-item">Популярные</option>
-        </select>
-        <div class="preview-container">
-          <a class="button preview-button-current" href="#">
-            <span class="visually-hidden">Отобразить сеткой</span>
-          </a>
-          <a class="button preview-button" href="#">
-            <span class="visually-hidden">Отобразить карточками</span>
-          </a>
-          <a class="button preview-button" href="#">
-            <span class="visually-hidden">Отобразить списком</span>
-          </a>
+      <section>
+        <div class="hotel-results-wrapper">
+          <h2 class="searh-result">Найдено гостиниц: 38</h2>
+          <select class="sorting" aria-label="Сортировка">
+            <option class="sorting-item">Сначала дешевые</option>
+            <option class="sorting-item">Сначала дорогие</option>
+            <option class="sorting-item">Популярные</option>
+          </select>
+          <div class="preview-container">
+            <a class="button preview-button-current" href="#">
+              <span class="visually-hidden">Отобразить сеткой</span>
+            </a>
+            <a class="button preview-button" href="#">
+              <span class="visually-hidden">Отобразить карточками</span>
+            </a>
+            <a class="button preview-button" href="#">
+              <span class="visually-hidden">Отобразить списком</span>
+            </a>
+          </div>
         </div>
-      </div>
+
+        <!--Каталог-->
 
         <ul class="products-list">
           <li class="product-card">
-            <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы Amara Resort & Spa" width="300" height="212">
+            <img class="product-image" src="img/catalog/hotel-1.jpg" alt="Внешний вид гостиницы Amara Resort & Spa." width="300" height="212">
             <h3 class="product-name">Amara Resort & Spa</h3>
             <div class="product-grid-wrapper">
               <span class="product-type">Гостиница</span>
               <span class="product-price">От 4000 &#8381;</span>
-              <a class="button product-link">Подробнее</a>
+              <a class="button product-link" href="#">Подробнее</a>
               <a class="button button-favorites" href="#">В избранное</a>
-              <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 4 звезды" width="140" height="37">
+              <span class="hotel-raiting">Гостиница 4 звезды.</span>
               <span class="hotel-rating">Рейтинг: 8,5</span>
             </div>
           </li>
 
-          <li class="product-card">
-            <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы Villas at Poco Diablo" width="300" height="212">
+          <lii class="product-card">
+            <img class="product-image" src="img/catalog/hotel-2.jpg" alt="Внешний вид гостиницы Villas at Poco Diablo." width="300" height="212">
             <h3 class="product-name">Villas at Poco Diablo</h3>
             <div class="product-grid-wrapper">
               <span class="product-type">Гостиница</span>
               <span class="product-price">От 5000 &#8381;</span>
-              <a class="button product-link">Подробнее</a>
+              <a class="button product-link" href="#">Подробнее</a>
               <a class="button button-favorites" href="#">В избранное</a>
-              <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 4 звезды" width="140" height="37">
+              <span class="hotel-raiting">Гостиница 4 звезды.</span>
               <span class="hotel-rating">Рейтинг: 9,2</span>
             </div>
           </li>
 
           <li class="product-card">
-            <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы Desert Quail Inn" width="300" height="212">
+            <img class="product-image" src="img/catalog/hotel-3.jpg" alt="Внешний вид гостиницы Desert Quail Inn." width="300" height="212">
             <h3 class="product-name">Desert Quail Inn</h3>
             <div class="product-grid-wrapper">
               <span class="product-type">Гостиница</span>
               <span class="product-price">От 2500 &#8381;</span>
-              <a class="button product-link">Подробнее</a>
+              <a class="button product-link" href="#">Подробнее</a>
               <a class="button button-favorites" href="#">В избранное</a>
-              <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 3 звезды" width="140" height="37">
+              <span class="hotel-raiting">Гостиница 3 звезды.</span>
               <span class="hotel-rating">Рейтинг: 6,9</span>
             </div>
           </li>
 
           <li class="product-card">
-            <img class="product-image" src="img/placeholder.svg" alt="Внешний вид гостиницы GreenTree Inn" width="300" height="212">
+            <img class="product-image" src="img/catalog/hotel-4.jpg" alt="Внешний вид гостиницы GreenTree Inn." width="300" height="212">
             <h3 class="product-name">GreenTree Inn</h3>
             <div class="product-grid-wrapper">
               <span class="product-type">Гостиница</span>
               <span class="product-price">От 1500 &#8381;</span>
-              <a class="button product-link">Подробнее</a>
+              <a class="button product-link" href="#">Подробнее</a>
               <a class="button button-favorites" href="#">В избранное</a>
-              <img class="hotel-stars" src="img/placeholder.svg" alt="Гостиница 2 звезды" width="140" height="37">
+              <span class="hotel-raiting-star">Гостиница 2 звезды.</span>
               <span class="hotel-rating">Рейтинг: 5,0</span>
             </div>
           </li>
         </ul>
 
+      </section>
+
         <!--Пагинация-->
 
-        <ul class="pagination">
+        <ol class="pagination">
           <li class="pagination-item">
             <a class="pagination-link" href="#">1</a>
           </li>
@@ -203,7 +207,7 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
+        </ol>
 
         <!--Форма подписки-->
 
@@ -245,7 +249,7 @@
       </address>
       <a class="site-developer" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Разработчик сайта HTML Academy.ru</span>
-        <img class="site-developer-logo" src="img/placeholder.svg" alt="Логотип HTML Academy.ru" width="115" height="33">
+        <img class="site-developer-logo" src="img/main/html-academy-logo.svg" alt="Логотип HTML Academy.ru." width="115" height="33">
       </a>
     </footer>
 
@@ -255,15 +259,15 @@
       <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="popuf-form-field">
           <span>Дата Заезда:</span>
-          <input class="popuf-form-field-input" type="date" name="arrival-date">
+          <input class="popuf-form-field-input" type="date" name="arrival-date" required>
         </label>
         <label class="popuf-form-field">
           <span>Дата Выезда:</span>
-          <input class="popuf-form-field-input" type="date" name="departure-date">
+          <input class="popuf-form-field-input" type="date" name="departure-date" required>
         </label>
         <label class="popuf-form-field">
           <span>Взрослые:</span>
-          <input class="popuf-form-field-input" type="number" name="adult-count">
+          <input class="popuf-form-field-input" type="number" name="adult-count" required>
         </label>
         <div class="children-input">
           <label class="popuf-form-field">
