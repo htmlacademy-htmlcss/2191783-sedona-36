@@ -1,0 +1,330 @@
+/* Подключение шрифтовых файлов */
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Общие стили */
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+.title {
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.button {
+  font-family: 'PT Sans',sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+main, .page-header, .main-footer {
+  background-color: #ffffff;
+}
+
+/* Шапка сайта */
+
+.page-header {
+  color: #000000;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.main-navigation-link {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header-button {
+  background-color: #756157;
+  text-decoration: none;
+}
+
+/* Блок-герой */
+
+.hero-block {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../img/index/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* Преимущества */
+
+
+
+.advantages-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: inherit;
+}
+
+.advantages-item-description {
+  text-align: center;
+}
+
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:first-child, .advantages-item:last-child {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+/* Предоставляемые услуги */
+
+.services-description {
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.services-item-description {
+  text-align: center;
+}
+
+.services-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* Поиск гостиницы */
+
+.hotel-search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hotel-search-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+}
+
+/* Форма подписки */
+
+.index-subscribe {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../img/index/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe-title-index {
+  color: #ffffff;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.subscribe-form-text-field {
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  border: none;
+}
+
+/* Подвал сайта */
+
+.footer-telephone {
+  color: #000000;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* Шапка каталога */
+
+.filter-and-header-wrapper {
+  background-color: #82B3D3;
+  color: #ffffff;
+  background-image: url("../img/catalog/header-and-filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.main-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.hotel-filter {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.hotel-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-button-submit {
+  background-color: #82B3D3;
+}
+
+.filter-button-reset {
+  background: none;
+  text-decoration: underline;
+}
+
+/* Каталог гостиниц */
+
+.searh-result {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.sorting {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.product-name {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-price {
+  text-align: right;
+}
+
+.product-link {
+  background-color: #756157;
+}
+
+.button-favorites {
+  background-color: #82B3D3;
+}
+
+.button-favorites-active{
+  background-color: #7DB54F;
+}
+
+.hotel-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+ .pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+ }
+
+ .pagination-link.active {
+  background-color: #F2F2F2;
+  color: #000000;
+ }
+
+/* Popup */
+
+.popup-container {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.popup-title {
+  text-align: left;
+}
+
+.popuf-form-field {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.popup-form input {
+  background-color: #f2f2f2;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.tool-tip {
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.tool-tip.error {
+  color: #FF5757;
+}
+
+.children-info {
+  background-color: #83B3D3;
+}
+
+.popup-form-button {
+  background-color: #83B3D3;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
