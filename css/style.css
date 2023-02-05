@@ -26,32 +26,31 @@ body {
   color: #333333;
 }
 
-.title {
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-}
-
-.section-title {
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-}
-
 .button {
   font-family: 'PT Sans',sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   border: none;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
 }
 
-main, .page-header, .main-footer {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hiddden;
+}
+
+.page-wrapper {
   background-color: #ffffff;
 }
 
@@ -70,8 +69,16 @@ main, .page-header, .main-footer {
 }
 
 .header-button {
+  color: #ffffff;
   background-color: #756157;
-  text-decoration: none;
+}
+
+.favorite-count {
+  color: #ffffff;
+  background-color: #7DB54F;
+  font-size: 10px;
+  line-height: 10px;
+
 }
 
 /* Блок-герой */
@@ -85,7 +92,15 @@ main, .page-header, .main-footer {
 
 /* Преимущества */
 
-
+.lead-advantages {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 .advantages-description {
   font-size: 22px;
@@ -94,9 +109,11 @@ main, .page-header, .main-footer {
 }
 
 .advantages-item-title {
+  color: #000000;
   font-size: 24px;
   line-height: 28px;
-  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .advantages-item-description {
@@ -111,17 +128,41 @@ main, .page-header, .main-footer {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:first-child, .advantages-item:last-child {
+.advantages-list .advantages-item-big {  /* Сделал такой селектор, чтобы побороть специфичность */
   color: #ffffff;
   background-color: #82B3D3;
 }
 
+.advantages-item-big .advantages-item-title {
+  color: inherit;
+}
+
 /* Предоставляемые услуги */
+
+.services-title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 .services-description {
   text-align: center;
   font-size: 22px;
   line-height: 26px;
+}
+
+.services-item-title {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .services-item-description {
@@ -134,28 +175,42 @@ main, .page-header, .main-footer {
 
 /* Поиск гостиницы */
 
+.hotel-search-title {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .hotel-search-description {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .hotel-search-button {
+  color: #ffffff;
+  background-color: #756157;
   font-size: 20px;
   line-height: 36px;
-  background-color: #756157;
 }
 
 /* Форма подписки */
 
-.index-subscribe {
-  background-color: rgba(131, 179, 211, 0.12);
-  background-image: url("../img/index/subscribe-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+.subscribe {
+  color: #ffffff;
 }
 
-.subscribe-title-index {
-  color: #ffffff;
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .subscribe-description {
@@ -164,16 +219,23 @@ main, .page-header, .main-footer {
   text-align: center;
 }
 
+.index-subscribe {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../img/index/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 .subscribe-form-text-field {
   background-color: #F2F2F2;
   border: none;
 }
 
 .subscribe-button {
+  color: #ffffff;
+  background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
-  border: none;
 }
 
 /* Подвал сайта */
@@ -186,6 +248,9 @@ main, .page-header, .main-footer {
   line-height: 40px;
   text-align: center;
 }
+
+
+
 
 /* Шапка каталога */
 
@@ -201,6 +266,7 @@ main, .page-header, .main-footer {
   font-size: 60px;
   line-height: 78px;
   text-align: left;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -221,6 +287,10 @@ main, .page-header, .main-footer {
   font-weight: 700;
 }
 
+.hotel-filter .button {
+  color: #ffffff;
+}
+
 .filter-button-submit {
   background-color: #82B3D3;
 }
@@ -233,9 +303,13 @@ main, .page-header, .main-footer {
 /* Каталог гостиниц */
 
 .searh-result {
+  color: #000000;
   font-size: 30px;
   line-height: 36px;
   text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 .sorting {
@@ -253,6 +327,10 @@ main, .page-header, .main-footer {
   text-align: right;
 }
 
+.products-list .button {
+  color: #ffffff;
+}
+
 .product-link {
   background-color: #756157;
 }
@@ -266,6 +344,7 @@ main, .page-header, .main-footer {
 }
 
 .hotel-rating {
+  background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -273,9 +352,10 @@ main, .page-header, .main-footer {
  }
 
  .pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
  }
 
  .pagination-link.active {
@@ -322,9 +402,33 @@ main, .page-header, .main-footer {
   background-color: #83B3D3;
 }
 
-.popup-form-button {
+.popup-container .button {
+  color: #ffffff;
   background-color: #83B3D3;
+}
+
+.popup-form-button {
+
   font-size: 20px;
   line-height: 24px;
+  text-align: center;
+}
+
+/* Форма подписки в каталоге */
+
+.subscribe-title-catalog {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.subscribe-description-catalog {
+  color: #333333;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
 }
