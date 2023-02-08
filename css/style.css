@@ -19,6 +19,7 @@
 /* Общие стили */
 
 body {
+  margin: 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -51,24 +52,63 @@ body {
 }
 
 .page-wrapper {
+  margin: 0 auto;
+  width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Шапка сайта */
 
 .page-header {
+
   color: #000000;
   font-size: 20px;
   line-height: 24px;
 }
 
+ .header-wrapper {  /* Обертка, чтобы блоки в шапке встали по центру */
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 140px;
+  margin-right: 28px;
+}
+
+.main-navigation {
+  width: 414px;
+  margin-right: auto;
+}
+
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .main-navigation-link {
   color: inherit;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
 }
 
+.user-menu {
+  width: 88px;
+  margin-right: 20px;
+}
+
+.user-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .header-button {
+  width: 160px;
   color: #ffffff;
   background-color: #756157;
 }
@@ -84,28 +124,47 @@ body {
 /* Блок-герой */
 
 .hero-block {
+  padding-top: 51px;
+  padding-bottom: 82px;
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../img/index/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
+.hero-block-decor-text {
+  display: block;
+  width: 458px;
+  margin: 0 auto;
+}
+
 /* Преимущества */
 
 .lead-advantages {
+  width: 620px;
+  margin: 0 auto 25px;;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .advantages-description {
+  width: 700px;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages-item-title {
@@ -120,6 +179,10 @@ body {
   text-align: center;
 }
 
+.advantages-item {
+  width: 400px;
+}
+
 .advantages-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -129,12 +192,27 @@ body {
 }
 
 .advantages-list .advantages-item-big {  /* Сделал такой селектор, чтобы побороть специфичность */
+  display: flex;
+  width: 100%;
   color: #ffffff;
   background-color: #82B3D3;
 }
 
+.advantages-item-big-left {
+  flex-direction: row-reverse;
+}
+
 .advantages-item-big .advantages-item-title {
   color: inherit;
+}
+
+.advantages-image-container {
+  width: 800px;
+}
+
+.advantages-image {
+  width: inherit; /* Правильно ли так управлять размером картинки? */
+  display: block;
 }
 
 /* Предоставляемые услуги */
@@ -146,7 +224,6 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .services-description {
@@ -162,7 +239,6 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .services-item-description {
@@ -182,7 +258,6 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .hotel-search-description {
@@ -210,7 +285,6 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .subscribe-description {
