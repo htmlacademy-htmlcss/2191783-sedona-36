@@ -34,7 +34,7 @@ body {
   color: #333333;
 }
 
-.main-contaoner {
+.main-container {
   flex-grow: 1;
 }
 
@@ -72,7 +72,6 @@ body {
 /* Шапка сайта */
 
 .page-header {
-
   color: #000000;
   font-size: 20px;
   line-height: 24px;
@@ -398,6 +397,9 @@ body {
 }
 
 .hotel-filter {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
   font-size: 16px;
   line-height: 23px;
 }
@@ -408,11 +410,34 @@ body {
   font-weight: 700;
 }
 
+.hotel-filter-option, .hotel-filter-type {
+  width: 151px;
+}
+
+.hotel-filter-option {
+  margin-right: 70px;
+}
+
+.hotel-filter-type {
+  margin-right: auto;
+}
+
+.hotel-filter-price {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.filter-button-wrapper {
+  width: 191px;
+}
+
 .hotel-filter .button {
+  width: 191px;
   color: #ffffff;
 }
 
 .filter-button-submit {
+  width: 191px;
   background-color: #82B3D3;
 }
 
@@ -423,7 +448,14 @@ body {
 
 /* Каталог гостиниц */
 
+.hotel-results-wrapper {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .searh-result {
+  margin-right: auto;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -434,8 +466,14 @@ body {
 }
 
 .sorting {
+  width: 292px;
+  margin-right: 70px;
   font-size: 18px;
   line-height: 21px;
+}
+
+.preview-container {
+  width: 160px;
 }
 
 .product-name {
@@ -470,6 +508,14 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+ }
+
+ .pagination {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
  }
 
  .pagination-link {
