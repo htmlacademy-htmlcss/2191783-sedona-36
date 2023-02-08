@@ -18,13 +18,24 @@
 
 /* Общие стили */
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
   color: #333333;
+}
+
+.main-contaoner {
+  flex-grow: 1;
 }
 
 .button {
@@ -141,8 +152,6 @@ body {
 /* Преимущества */
 
 .lead-advantages {
-  width: 620px;
-  margin: 0 auto 25px;;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -152,8 +161,6 @@ body {
 }
 
 .advantages-description {
-  width: 700px;
-  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -211,13 +218,14 @@ body {
 }
 
 .advantages-image {
-  width: inherit; /* Правильно ли так управлять размером картинки? */
   display: block;
+  width: inherit; /* Можно ли так управлять размером картинки в контейнере? */
 }
 
 /* Предоставляемые услуги */
 
 .services-title {
+  width: 620px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -230,6 +238,17 @@ body {
   text-align: center;
   font-size: 22px;
   line-height: 26px;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-item {
+  width: 400px;
 }
 
 .services-item-title {
@@ -252,6 +271,7 @@ body {
 /* Поиск гостиницы */
 
 .hotel-search-title {
+  width: 620px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -267,6 +287,8 @@ body {
 }
 
 .hotel-search-button {
+  display: block;
+  width: 376px;
   color: #ffffff;
   background-color: #756157;
   font-size: 20px;
@@ -301,11 +323,13 @@ body {
 }
 
 .subscribe-form-text-field {
+  width: 452px;
   background-color: #F2F2F2;
   border: none;
 }
 
 .subscribe-button {
+  width: 232px;
   color: #ffffff;
   background-color: #82B3D3;
   font-size: 20px;
@@ -313,6 +337,26 @@ body {
 }
 
 /* Подвал сайта */
+
+.footer-wrapper {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.social-list {
+  margin: 0;
+  margin-right: 42px;
+  padding: 0;
+  width: 142px;
+  list-style: none;
+}
+
+.main-footer address {
+  width: 720px;
+  margin-right: 42px;
+  text-align: center;
+}
 
 .footer-telephone {
   color: #000000;
@@ -323,6 +367,9 @@ body {
   text-align: center;
 }
 
+.site-developer {
+  width: 115px;
+}
 
 
 
