@@ -153,7 +153,7 @@
                 </div>
               </li>
 
-              <lii class="product-card">
+              <li class="product-card">
                 <img class="product-image" src="img/catalog/hotel-2.jpg" alt="Внешний вид гостиницы Villas at Poco Diablo." width="300" height="212">
                 <h3 class="product-name">Villas at Poco Diablo</h3>
                 <div class="product-grid-wrapper">
@@ -196,8 +196,8 @@
             <!-- Пагинация -->
 
             <ol class="pagination">
-              <li class="pagination-item">
-                <a class="button pagination-link active" href="#">1</a>
+              <li class="pagination-item active">
+                <a class="button pagination-link" href="#">1</a>
               </li>
               <li class="pagination-item">
                 <a class="button pagination-link" href="#">2</a>
@@ -217,9 +217,10 @@
 
             <!-- Форма подписки -->
 
-            <section class="subscribe catalog-subscribe">
-              <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
-              <p class="subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <section class="subscribe catalog-subscribe">
+            <div class="subscribe-position-container">
+              <h2 class="subscribe-title subscribe-title-catalog">Подпишитесь на рассылку</h2>
+              <p class="subscribe-description subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label>
                   <input class="subscribe-form-text-field" type="email" name="subscribe-user-email" id="subscribe-form-user-email" placeholder="Ваш e-mail" required>
@@ -227,7 +228,8 @@
                 </label>
                 <button class="button subscribe-button" type="submit">Подписаться</button>
               </form>
-            </section>
+            </div>
+          </section>
         </main>
       </div>
 
