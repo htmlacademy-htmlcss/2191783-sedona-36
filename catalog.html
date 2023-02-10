@@ -11,20 +11,19 @@
     <div class="page-wrapper">
       <header class="page-header">
         <div class="header-wrapper">
-          <h1 class="visually-hidden">Городок Седона</h1>
           <a class="logo-link" href="index.html">
             <img class="logo" src="img/main/logo.svg" alt="Логотип городка Седона." width="140" height="70">
           </a>
           <nav class="main-navigation">
             <ul class="main-navigation-list">
-              <li class="main-navigation-item main-navigation-item-current">
+              <li class="main-navigation-item">
                 <a class="main-navigation-link" href="index.html">Главная</a>
               </li>
               <li class="main-navigation-item">
                 <a class="main-navigation-link" href="#">О Седоне</a>
               </li>
               <li class="main-navigation-item">
-                <a class="main-navigation-link">Гостиницы</a>
+                <a class="main-navigation-link main-navigation-item-current">Гостиницы</a>
               </li>
             </ul>
           </nav>
@@ -32,21 +31,23 @@
           <nav class="user-menu">
             <ul class="user-menu-list">
               <li class="user-menu-item">
-                <a class="user-menu-link">
+                <a class="user-menu-link" href="#">
                   <span class="visually-hidden">Поиск</span>
                 </a>
               </li>
               <li class="user-menu-item">
-                <a class="user-menu-link">
+                <a class="user-menu-link" href="#">
                   <span class="visually-hidden">Избраное</span>
                   <span class="favorite-count">12</span>
                 </a>
               </li>
+              <li class="user-menu-item">
+                <a class="button header-button" href="#">
+                  Хочу сюда!
+                </a>
+              </li>
             </ul>
           </nav>
-          <a class="button header-button" href="#">
-            Хочу сюда!
-          </a>
         </div>
       </header>
 
@@ -75,32 +76,44 @@
             <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="hotel-filter-option">
                 <legend class="hotel-filter-title">Инфраструктура:</legend>
-                <p class="hotel-filter-input-field">
-                  <input type="checkbox" name="hotel-option-pool" id="hotel-option-pool" checked>
-                  <label for="hotel-option-pool">Бассейн</label>
+                <p class="hotel-filter-input">
+                  <label class="checkbox-input-label">
+                    <input class="input-checkbox" type="checkbox" name="hotel-option-pool" checked>
+                    <span class="input-value">Бассейн</span>
+                  </label>
                 </p>
-                <p class="hotel-filter-input-field">
-                  <input type="checkbox" name="hotel-option-parking" id="hotel-option-parking" checked>
-                  <label for="hotel-option-parking">Парковка</label>
+                <p class="hotel-filter-input">
+                  <label class="checkbox-input-label">
+                    <input class="input-checkbox" type="checkbox" name="hotel-option-parking" checked>
+                    <span class="input-value">Парковка</span>
+                  </label>
                 </p>
-                <p class="hotel-filter-input-field">
-                  <input type="checkbox" name="hotel-option-wifi" id="hotel-option-wifi">
-                  <label for="hotel-option-wifi">Wi-Fi</label>
+                <p class="hotel-filter-input">
+                  <label class="checkbox-input-label">
+                    <input class="input-checkbox" type="checkbox" name="hotel-option-wifi" checked>
+                    <span class="input-value">Wi-Fi</span>
+                  </label>
                 </p>
               </fieldset>
               <fieldset class="hotel-filter-type">
                 <legend class="hotel-filter-title">Тип Жилья:</legend>
-                <p class="hotel-filter-input-field">
-                  <input type="radio" name="hotel-type" value="hotel" id="hotel-type-hotel">
-                  <label for="hotel-type-hotel">Гостиница</label>
+                <p class="hotel-filter-input">
+                  <label class="radio-input-label">
+                    <input type="radio" name="hotel-type" value="hotel">
+                    <span class="input-value">Гостиница</span>
+                  </label>
                 </p>
-                <p class="hotel-filter-input-field">
-                  <input type="radio" name="hotel-type" value="motel" id="hotel-type-motel">
-                  <label for="hotel-type-motel">Мотель</label>
+                <p class="hotel-filter-input">
+                  <label class="radio-input-label">
+                    <input type="radio" name="hotel-type" value="motel">
+                    <span class="input-value">Мотель</span>
+                  </label>
                 </p>
-                <p class="hotel-filter-input-field">
-                  <input type="radio" name="hotel-type" value="apartment" id="hotel-type-apartment">
-                  <label for="hotel-type-apartment">Апартаменты</label>
+                <p class="hotel-filter-input">
+                  <label class="radio-input-label">
+                    <input type="radio" name="hotel-type" value="apartment">
+                    <span class="input-value">Апартаменты</span>
+                  </label>
                 </p>
               </fieldset>
               <fieldset class="hotel-filter-price">
