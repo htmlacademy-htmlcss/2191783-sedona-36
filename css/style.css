@@ -18,6 +18,12 @@
 
 /* Общие стили */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -25,7 +31,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
@@ -38,7 +44,7 @@ body {
 
 .button {
   padding: 0;
-  font-family: 'PT Sans',sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -74,15 +80,11 @@ body {
 /* Шапка сайта */
 
 .page-header {
+  display: flex;
+  padding: 0 70px;
   color: #000000;
   font-size: 20px;
   line-height: 24px;
-}
-
- .header-wrapper {  /* Обертка, чтобы блоки в шапке встали по центру */
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
 }
 
 .logo {
