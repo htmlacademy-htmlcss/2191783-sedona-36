@@ -170,7 +170,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding: 80px 70px;
 }
 
 .lead-advantages {
@@ -213,10 +213,6 @@ body {
 
 .advantages-item-description {
   text-align: center;
-}
-
-.advantages-item {
-  width: 400px;
 }
 
 .advantages-item-container {
@@ -265,11 +261,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px 0;
+  padding: 64px 70px;
 }
 
 .services-title {
-  width: 620px;
+  margin-bottom: 20px;
+  max-width: 700px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -279,6 +276,7 @@ body {
 }
 
 .services-description {
+  margin: 0;
   text-align: center;
   font-size: 22px;
   line-height: 26px;
@@ -292,10 +290,37 @@ body {
 }
 
 .services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 81px 85px;
   width: 400px;
 }
 
+.services-icon {
+  display: block;
+  margin-bottom: 30px;
+  width: 75px;
+  min-height: 76px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.icon-1 {
+  background-image: url('../img/index/services-home.svg');
+}
+
+.icon-2 {
+  background-image: url('../img/index/services-food.svg');
+}
+
+.icon-3 {
+  background-image: url('../img/index/services-souvenir.svg');
+}
+
 .services-item-title {
+  margin: 0;
+  margin-bottom: 30px;
   color: #000000;
   font-size: 24px;
   line-height: 28px;
@@ -305,6 +330,7 @@ body {
 }
 
 .services-item-description {
+  margin: 0;
   text-align: center;
 }
 
@@ -314,18 +340,23 @@ body {
 
 /* Поиск гостиницы */
 
-.hotel-search-position-container {
+.hotel-search {
+  display: flex;
+  justify-content: center;
+  padding: 96px 70px;;
+}
+
+.hotel-search-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 96px 0;
 }
 
 .hotel-search-title {
+  display: block;
   margin: 0;
   margin-bottom: 20px;
-  width: 620px;
+  max-width: 700px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -344,7 +375,8 @@ body {
 
 .hotel-search-button {
   display: inline-block;
-  width: 376px;
+  min-width: 376px;
+  padding: 8px 50px;
   color: #ffffff;
   background-color: #756157;
   font-size: 20px;
@@ -439,8 +471,6 @@ body {
 .site-developer {
   width: 115px;
 }
-
-
 
 /* Шапка каталога */
 
