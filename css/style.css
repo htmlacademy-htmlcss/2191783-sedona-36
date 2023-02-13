@@ -100,7 +100,7 @@ body {
 .main-navigation-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .main-navigation-link {
@@ -117,7 +117,7 @@ body {
 .user-menu-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .user-menu-link {
@@ -170,13 +170,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 0;
+  padding: 80px;
 }
 
 .lead-advantages {
   margin: 0;
   margin-bottom: 25px;
-  width: 700px;
+  max-width: 700px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -197,10 +197,13 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .advantages-item-title {
+  margin: 0 auto;
+  margin-bottom: 62px;
+  max-width: 175px;
   color: #000000;
   font-size: 24px;
   line-height: 28px;
@@ -216,6 +219,12 @@ body {
   width: 400px;
 }
 
+.advantages-item-container {
+  padding: 102px 85px;
+  width: 400px;
+  min-height: 180px;
+}
+
 .advantages-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -225,6 +234,7 @@ body {
 }
 
 .advantages-list .advantages-item-big {
+  display: flex;
   width: 100%;
   color: #ffffff;
   background-color: #82B3D3;
@@ -243,8 +253,9 @@ body {
 }
 
 .advantages-image {
-  display: block;
-  width: inherit; /* Можно ли так управлять размером картинки в контейнере? */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* Предоставляемые услуги */
@@ -351,7 +362,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 96px;;
+  padding-top: 96px;
   padding-bottom: 104px;
 }
 
