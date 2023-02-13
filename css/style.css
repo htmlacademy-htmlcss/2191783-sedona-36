@@ -144,18 +144,23 @@ body {
 /* Блок-герой */
 
 .hero-block {
+  display: flex;
+  justify-content: center;
   padding-top: 51px;
   padding-bottom: 82px;
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../img/index/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: top center;
+}
+
+.decor-text-wrapper {
+  min-width: 458px;
 }
 
 .hero-block-decor-text {
-  display: block;
-  width: 458px;
-  margin: 0 auto;
+  object-fit: cover;
 }
 
 /* Преимущества */
