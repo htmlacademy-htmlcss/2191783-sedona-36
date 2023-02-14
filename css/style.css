@@ -18,7 +18,13 @@
 
 /* Общие стили */
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  margin: 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -26,7 +32,12 @@ body {
   color: #333333;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .button {
+  padding: 0;
   font-family: 'PT Sans',sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -47,11 +58,17 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hiddden;
+  overflow: hidden;
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Шапка сайта */
@@ -62,13 +79,54 @@ body {
   line-height: 24px;
 }
 
+ .header-wrapper {  /* Обертка, чтобы блоки в шапке встали по центру */
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 140px;
+  margin-right: 28px;
+}
+
+.main-navigation {
+  width: 414px;
+  margin-right: auto;
+}
+
+.main-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .main-navigation-link {
   color: inherit;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
 }
 
+.user-menu {
+  margin-right: 20px;
+}
+
+.user-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu-link {
+  padding: 22px 12px;
+  width: 20px;
+}
+
 .header-button {
+  align-self: center;
+  display: inline-block;
+  padding: 8px 34px;
   color: #ffffff;
   background-color: #756157;
 }
@@ -84,28 +142,55 @@ body {
 /* Блок-герой */
 
 .hero-block {
+  padding-top: 51px;
+  padding-bottom: 82px;
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../img/index/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
+.hero-block-decor-text {
+  display: block;
+  width: 458px;
+  margin: 0 auto;
+}
+
 /* Преимущества */
 
+.advantages-position-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
 .lead-advantages {
+  margin: 0;
+  margin-bottom: 25px;
+  width: 700px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .advantages-description {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages-item-title {
@@ -120,6 +205,10 @@ body {
   text-align: center;
 }
 
+.advantages-item {
+  width: 400px;
+}
+
 .advantages-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -128,31 +217,64 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-list .advantages-item-big {  /* Сделал такой селектор, чтобы побороть специфичность */
+.advantages-list .advantages-item-big {
+  width: 100%;
   color: #ffffff;
   background-color: #82B3D3;
+}
+
+.advantages-item-big-left {
+  flex-direction: row-reverse;
 }
 
 .advantages-item-big .advantages-item-title {
   color: inherit;
 }
 
+.advantages-image-container {
+  width: 800px;
+}
+
+.advantages-image {
+  display: block;
+  width: inherit; /* Можно ли так управлять размером картинки в контейнере? */
+}
+
 /* Предоставляемые услуги */
 
+.services-position-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+}
+
 .services-title {
+  width: 620px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .services-description {
   text-align: center;
   font-size: 22px;
   line-height: 26px;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-item {
+  width: 400px;
 }
 
 .services-item-title {
@@ -162,7 +284,6 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .services-item-description {
@@ -175,23 +296,37 @@ body {
 
 /* Поиск гостиницы */
 
+.hotel-search-position-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 0;
+}
+
 .hotel-search-title {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 620px;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .hotel-search-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
 }
 
 .hotel-search-button {
+  display: inline-block;
+  width: 376px;
   color: #ffffff;
   background-color: #756157;
   font-size: 20px;
@@ -204,16 +339,28 @@ body {
   color: #ffffff;
 }
 
+.subscribe-position-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 96px;;
+  padding-bottom: 104px;
+}
+
 .subscribe-title {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .subscribe-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -227,11 +374,13 @@ body {
 }
 
 .subscribe-form-text-field {
+  width: 452px;
   background-color: #F2F2F2;
   border: none;
 }
 
 .subscribe-button {
+  width: 232px;
   color: #ffffff;
   background-color: #82B3D3;
   font-size: 20px;
@@ -239,6 +388,26 @@ body {
 }
 
 /* Подвал сайта */
+
+.footer-wrapper {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.social-list {
+  margin: 0;
+  margin-right: 42px;
+  padding: 0;
+  width: 142px;
+  list-style: none;
+}
+
+.main-footer address {
+  width: 720px;
+  margin-right: 42px;
+  text-align: center;
+}
 
 .footer-telephone {
   color: #000000;
@@ -249,12 +418,16 @@ body {
   text-align: center;
 }
 
+.site-developer {
+  width: 115px;
+}
 
 
 
 /* Шапка каталога */
 
 .filter-and-header-wrapper {
+  padding: 35px 70px 70px;
   background-color: #82B3D3;
   color: #ffffff;
   background-image: url("../img/catalog/header-and-filter-background.jpg");
@@ -263,6 +436,7 @@ body {
 }
 
 .main-header-title {
+  margin: 0;
   font-size: 60px;
   line-height: 78px;
   text-align: left;
@@ -277,6 +451,9 @@ body {
 }
 
 .hotel-filter {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
   font-size: 16px;
   line-height: 23px;
 }
@@ -287,11 +464,34 @@ body {
   font-weight: 700;
 }
 
+.hotel-filter-option, .hotel-filter-type {
+  width: 151px;
+}
+
+.hotel-filter-option {
+  margin-right: 70px;
+}
+
+.hotel-filter-type {
+  margin-right: auto;
+}
+
+.hotel-filter-price {
+  width: 288px;
+  margin-right: 70px;
+}
+
+.filter-button-wrapper {
+  width: 191px;
+}
+
 .hotel-filter .button {
+  width: 191px;
   color: #ffffff;
 }
 
 .filter-button-submit {
+  width: 191px;
   background-color: #82B3D3;
 }
 
@@ -300,9 +500,17 @@ body {
   text-decoration: underline;
 }
 
-/* Каталог гостиниц */
+/* Верхнее меню сортировки */
+
+.hotel-results-wrapper {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 1060px;
+}
 
 .searh-result {
+  margin-right: auto;
   color: #000000;
   font-size: 30px;
   line-height: 36px;
@@ -313,8 +521,36 @@ body {
 }
 
 .sorting {
+  width: 292px;
+  margin-right: 70px;
   font-size: 18px;
   line-height: 21px;
+}
+
+.preview-container {
+  width: 160px;
+}
+
+/* Каталог */
+
+.catalog {
+  padding: 0 70px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.product-card {
+  width: 340px;
 }
 
 .product-name {
@@ -351,15 +587,38 @@ body {
   text-transform: uppercase;
  }
 
- .pagination-link {
-  color: #ffffff;
+ /* Пагинация */
+
+ .pagination {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+ }
+
+ .pagination-item {
+  width: 60px;
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
  }
 
- .pagination-link.active {
-  background-color: #F2F2F2;
+ .pagination-item.active {
+   background-color: #F2F2F2;
+ }
+
+ .pagination-item:not(.pagination-item:last-child) {
+   margin-right: 8px;
+ }
+
+ .pagination-link {
+  color: #ffffff;
+ }
+
+ .active .pagination-link {
   color: #000000;
  }
 
