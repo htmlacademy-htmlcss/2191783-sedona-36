@@ -208,28 +208,38 @@
     <!-- Popup -->
 
     <div class="popup-container">
-      <h2 class=" popup-title">Поиск гостиницы в Седоне</h2>
+      <h2 class="title popup-title">Поиск гостиницы в Седоне</h2>
+      <button class="button popup-close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
       <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="popuf-form-field">
-          <span>Дата Заезда:</span>
-          <input class="popuf-form-field-input" type="date" name="arrival-date" required>
-        </label>
-        <p class="tool-tip error">Мы не можем отправить вас в прошлое.</p>
-        <label class="popuf-form-field">
-          <span>Дата Выезда:</span>
-          <input class="popuf-form-field-input" type="date" name="departure-date" required>
-        </label>
-        <p class="tool-tip">На эти даты есть свободные номера. Пока есть.</p>
-        <label class="popuf-form-field">
-          <span>Взрослые:</span>
-          <input class="popuf-form-field-input" type="number" name="adult-count" required>
-        </label>
-        <div class="children-input">
+        <div class="popup-field-container">
+          <label class="popuf-form-field" for="arrival-date">Дата Заезда:</label>
+          <div class="text-container">
+            <input class="popuf-text-field-input" type="date" name="arrival-date" id="arrival-date" required>
+            <p class="tool-tip error">Мы не можем отправить вас в прошлое.</p>
+          </div>
+        </div>
+        <div class="popup-field-container">
+          <label class="popuf-form-field" for="departure-date">Дата Выезда:</label>
+          <div class="text-container">
+            <input class="popuf-text-field-input" type="date" name="departure-date" id="departure-date" required>
+            <p class="tool-tip">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+        </div>
+
+        <div class="popup-input-wrapper">
           <label class="popuf-form-field">
-            <span>Дети:</span>
-            <input class="popuf-form-field-input" type="number" name="child-count">
+            <span>Взрослые:</span>
+            <input class="popuf-count-field-input" type="number" name="adult-count" required>
           </label>
-          <button class="button children-info" type="button"><span class="visually-hidden">Info</span></button>
+          <div class="children-input">
+            <label class="popuf-form-field">
+              <span>Дети:</span>
+              <input class="popuf-count-field-input" type="number" name="child-count">
+            </label>
+            <button class="button children-info" type="button"><span class="visually-hidden">Info</span></button>
+          </div>
         </div>
         <button class="button popup-form-button" type="submit">Найти</button>
       </form>
