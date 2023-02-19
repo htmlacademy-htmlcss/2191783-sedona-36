@@ -52,6 +52,7 @@ body {
   text-decoration: none;
   text-align: center;
   border: none;
+  border-radius: 4px;
 }
 
 .text-field {
@@ -180,10 +181,10 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
   background-color: rgba(131, 179, 211, 0.12);
-  background-image: url("../img/index/background.jpg");
+  background-image: url("../img/index/divider.svg"), url("../img/index/background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+  background-size: fill, cover;
+  background-position: center bottom, center top;
 }
 
 .hero-block-decor-text {
@@ -229,6 +230,7 @@ body {
 }
 
 .advantages-item-title {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 62px;
   max-width: 175px;
@@ -237,6 +239,20 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.advantages-item-title::after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  left: 35%;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item-big .advantages-item-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item-description {
@@ -462,6 +478,8 @@ body {
   background-color: #F2F2F2;
   line-height: 24px;
   border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .subscribe-button {
@@ -471,6 +489,9 @@ body {
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 /* Подвал сайта */
@@ -857,8 +878,10 @@ color: #000000;
 /* Popup */
 
 .popup-container {
-  display: none;
   position: absolute;
+  top: center;
+  right: center;
+  transform: translate(-50% -50%);
   padding: 64px 70px;
   width: 717px;
   background-color: #ffffff;
@@ -890,38 +913,62 @@ color: #000000;
   text-transform: uppercase;
 }
 
-.popuf-form-field {
-  display: inline-block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 18px;
+.popup-grid-container {
+  display: grid;
+  grid-template-columns: 137px 198px 131px 110px;
+}
+
+.popup-form-label {
+  grid-row: span 2;
+  padding: 12px;
+  padding-left: 0;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 700;
 }
 
-.popup-form input {
-  background-color: #f2f2f2;
-  border: none;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.popup-field-container {
-  display: grid;
-  grid-template-columns: 137px 440px;
-  margin-bottom: 23px;
-}
-
-.popuf-text-field-input {
+.popup-text-field-input {
+  grid-column: 2 / 5;
   margin-bottom: 4px;
   padding: 12px 20px;
-  width: 100%;
+  background-color: #F2F2F2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+}
+
+.popup-count-field {
+  display: flex;
+  max-width: 100%;
+}
+
+.count-field {
+  padding: 14px 10px;
+  width: 30px;
+  background-color: #F2F2F2;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+}
+
+.count-button {
+  display: inline-block;
+  padding: 17px 13px;
+  background-color: #F2F2F2;
+}
+
+.count-icon {
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .tool-tip {
+  grid-column: 2 / 5;
   margin: 0;
+  margin-bottom: 23px;
   padding: 0 20px;
   font-size: 16px;
   line-height: 21px;
@@ -937,6 +984,10 @@ color: #000000;
 }
 
 .popup-form-button {
+  grid-column: 1 / -1;
+  margin-top: 48px;
+  padding: 18px;
+  color: #ffffff;
   background-color: #83B3D3;
   font-size: 20px;
   line-height: 24px;

@@ -206,42 +206,48 @@
     </div>
 
     <!-- Popup -->
-
     <div class="popup-container">
       <h2 class="title popup-title">Поиск гостиницы в Седоне</h2>
       <button class="button popup-close">
         <span class="visually-hidden">Закрыть окно</span>
       </button>
       <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="popup-field-container">
-          <label class="popuf-form-field" for="arrival-date">Дата Заезда:</label>
-          <div class="text-container">
-            <input class="popuf-text-field-input" type="date" name="arrival-date" id="arrival-date" required>
-            <p class="tool-tip error">Мы не можем отправить вас в прошлое.</p>
-          </div>
-        </div>
-        <div class="popup-field-container">
-          <label class="popuf-form-field" for="departure-date">Дата Выезда:</label>
-          <div class="text-container">
-            <input class="popuf-text-field-input" type="date" name="departure-date" id="departure-date" required>
-            <p class="tool-tip">На эти даты есть свободные номера. Пока есть.</p>
-          </div>
-        </div>
+        <div class="popup-grid-container">
+          <label class="popup-form-label" for="arrival-date">Дата Заезда:</label>
+          <input class="popup-text-field-input" type="date" name="arrival-date" id="arrival-date" required>
+          <p class="tool-tip error">Мы не можем отправить вас в прошлое.</p>
 
-        <div class="popup-input-wrapper">
-          <label class="popuf-form-field">
-            <span>Взрослые:</span>
-            <input class="popuf-count-field-input" type="number" name="adult-count" required>
-          </label>
-          <div class="children-input">
-            <label class="popuf-form-field">
-              <span>Дети:</span>
-              <input class="popuf-count-field-input" type="number" name="child-count">
-            </label>
-            <button class="button children-info" type="button"><span class="visually-hidden">Info</span></button>
+          <label class="popup-form-label" for="departure-date">Дата Выезда:</label>
+          <input class="popup-text-field-input" type="date" name="departure-date" id="departure-date" required>
+          <p class="tool-tip">На эти даты есть свободные номера. Пока есть.</p>
+
+          <label class="popup-form-label">Взрослые:</label>
+          <div class="popup-count-field">
+            <button class="button count-button minus" type="button">
+              <span class="visually-hidden">Уменьшить количество</span>
+              <svg class="count-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z"/></svg>
+            </button>
+            <input class="count-field" type="text" name="adult-count" value="2" required>
+            <button class="button count-button plus" type="button">
+              <span class="visually-hidden">Увеличить количество</span>
+              <svg class="count-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+            </button>
           </div>
+
+          <label class="popup-form-label">Взрослые:</label>
+          <div class="popup-count-field">
+            <button class="button count-button minus" type="button">
+              <span class="visually-hidden">Уменьшить количество</span>
+              <svg class="count-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M3 9v2h14V9H3Z"/></svg>
+            </button>
+            <input class="count-field" type="text" name="adult-count" value="2" required>
+            <button class="button count-button plus" type="button">
+              <span class="visually-hidden">Увеличить количество</span>
+              <svg class="count-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+            </button>
+          </div>
+          <button class="button popup-form-button" type="submit">Найти</button>
         </div>
-        <button class="button popup-form-button" type="submit">Найти</button>
       </form>
     </div>
 
