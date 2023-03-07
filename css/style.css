@@ -1,16 +1,16 @@
 /* Подключение шрифтовых файлов */
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url('../fonts/ptsans-400.woff2') format('woff2');
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url('../fonts/ptsans-700.woff2') format('woff2');
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -31,10 +31,10 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   color: #333333;
 }
 
@@ -79,7 +79,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   width: 1200px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -122,7 +122,7 @@ body {
 }
 
 .main-navigation-link.current::after {
-  content:'';
+  content:"";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -167,7 +167,7 @@ body {
 
 .header-button {
   padding: 8px 34px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #756157;
 }
 
@@ -178,7 +178,7 @@ body {
   padding: 5px;
   min-width: 20px;
   min-height: 20px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #7DB54F;
   font-size: 10px;
   line-height: 10px;
@@ -195,21 +195,21 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
   background-color: #778693;
-  background-image: url('../img/index/background.jpg');
+  background-image: url("../img/index/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
 }
 
 .hero-block::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   width: 100%;
   height: 57px;
-  background-image: url('../img/index/divider.svg');
+  background-image: url("../img/index/divider.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: fill;
@@ -265,7 +265,7 @@ body {
 }
 
 .advantages-item-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -304,7 +304,7 @@ body {
 
 .advantages-list .advantages-item-big {
   display: flex;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #83B3D3;
 }
 
@@ -443,7 +443,7 @@ body {
   display: block;
   min-width: 376px;
   padding: 8px 50px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #756157;
   font-size: 20px;
   line-height: 36px;
@@ -455,7 +455,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 96px 70px 104px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .subscribe-wrapper {
@@ -486,7 +486,7 @@ body {
 
 .index-subscribe {
   background-color: #778693;
-  background-image: url('../img/index/subscribe-background.jpg');
+  background-image: url("../img/index/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -509,7 +509,7 @@ body {
 .subscribe-button {
   padding: 8px 50px;
   width: 232px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #83B3D3;
   font-size: 20px;
   line-height: 36px;
@@ -569,8 +569,8 @@ body {
 .filter-and-header-wrapper {
   padding: 35px 70px 70px;
   background-color: #778693;
-  color: #ffffff;
-  background-image: url('../img/catalog/header-and-filter-background.jpg');
+  color: #FFFFFF;
+  background-image: url("../img/catalog/header-and-filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -597,20 +597,20 @@ body {
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -19px;
   min-width: 8px;
   min-height: 20px;
-  background-image: url('../img/catalog/breadcrumbs-arrow.svg');
+  background-image: url("../img/catalog/breadcrumbs-arrow.svg");
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  fill: #ffffff;
+  fill: #FFFFFF;
 }
 
 .hotel-filter {
@@ -638,6 +638,7 @@ body {
 .checkbox-input-label,
 .radio-input-label {
   position: relative;
+  cursor: pointer;
 }
 
 .input-value {
@@ -653,9 +654,8 @@ body {
   transform: translateY(1px);
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .custom-radio {
@@ -664,13 +664,12 @@ body {
   transform: translateY(1px);
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .custom-radio::after {
-  content: '';
+  content: "";
   display: none;
   position: absolute;
   left: 50%;
@@ -712,7 +711,7 @@ body {
 
 .hotel-filter .button {
   width: 191px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .filter-button-submit {
@@ -793,7 +792,7 @@ body {
   left: 0;
   width: 226px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .price-toggle {
@@ -803,7 +802,7 @@ body {
   transform: translateY(calc(-50% + 2px));
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -827,6 +826,7 @@ body {
   margin-right: auto;
   color: #000000;
   font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -839,8 +839,8 @@ body {
   width: 292px;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
-  background-image: url('../img/catalog/sort-select.svg');
+  background-color: #FFFFFF;
+  background-image: url("../img/catalog/sort-select.svg");
   background-repeat: no-repeat;
   background-position: top 19px right 18px;
   border: 2px solid #E5E5E5;
@@ -849,8 +849,9 @@ body {
 }
 
 .preview-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
   width: 160px;
 }
 
@@ -859,6 +860,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 48px;
+  min-width: 1px;
   height: 48px;
   border: 2px solid #E5E5E5;
 }
@@ -936,7 +938,7 @@ body {
 }
 
 .products-list .button {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .product-link {
@@ -963,7 +965,7 @@ body {
 
 .hotel-raiting-star-4 {
   margin: 0;
-  background-image: url('../img/catalog/four-star.svg');
+  background-image: url("../img/catalog/four-star.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -973,7 +975,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/catalog/three-star.svg');
+  background-image: url("../img/catalog/three-star.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -983,7 +985,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/catalog/two-star.svg');
+  background-image: url("../img/catalog/two-star.svg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -1010,7 +1012,7 @@ body {
   min-height: 60px;
   background-color: #83B3D3;
   font-size: 20px;
-  color: #ffffff;
+  color: #FFFFFF;
   line-height: 36px;
   border-radius: 4px;
 }
@@ -1053,7 +1055,7 @@ body {
   z-index: 2;
   padding: 64px 70px;
   width: 717px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   color: #000000;
   border-radius: 30px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
@@ -1112,22 +1114,23 @@ body {
 
 .date-input {
   padding: 12px 20px;
+  margin-bottom: 4px;
   width: 100%;
   line-height: 24px;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
 }
 
 .text-container::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 16px;
   right: 20px;
   width: 20px;
   height: 20px;
-  background-image: url('../img/main/calender.svg');
+  background-image: url("../img/main/calender.svg");
   background-repeat: no-repeat;
   background-size: fill;
   background-position: center center;
@@ -1179,7 +1182,7 @@ body {
   width: 31px;
   height: 48px;
   margin: 0;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   text-align: center;
   border: none;
   -moz-appearance: textfield;
@@ -1202,7 +1205,7 @@ body {
   align-items: center;
   width: 40px;
   height: 48px;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   border-radius: 0;
 }
 
@@ -1225,7 +1228,7 @@ body {
   width: 26px;
   height: 26px;
   background-color: #83B3D3;
-  background-image: url('../img/main/info-popup.svg');
+  background-image: url("../img/main/info-popup.svg");
   background-size: 20px 20px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1239,17 +1242,18 @@ body {
   top: 36px;
   padding: 18px;
   width: 256px;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-align: left;
   text-transform: none;
   background-color: #333333;
+  border-radius: 10px;
 }
 
 .info-text::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -7px;
   left: 50%;
@@ -1264,11 +1268,12 @@ body {
   margin-top: 48px;
   padding: 18px;
   width: 100%;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #83B3D3;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+  border-radius: 10px;
 }
 
 /* Форма подписки в каталоге */
@@ -1303,7 +1308,7 @@ body {
 
 .main-navigation-link:active,
 .user-menu-link:active {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .favorite-count:hover {
@@ -1336,13 +1341,11 @@ body {
   outline: none;
 }
 
-input[type="text"]:hover,
-input[type="email"]:hover {
+.subscribe-form.text-field:hover {
   background-color: #E6E6E6;
 }
 
-input[type="text"]:focus-visible,
-input[type="email"]:focus-visible {
+.subscribe-form.text-field:focus-visible {
   outline: 3px solid #83B3D3;
 }
 
@@ -1388,7 +1391,7 @@ input[type="email"]:focus-visible {
 }
 
 .input-checkbox:checked + .custom-checkbox {
-  background-image: url('../img/main/check.svg');
+  background-image: url("../img/main/check.svg");
   background-position: 4px 5px;
   background-repeat: no-repeat;
 }
@@ -1428,7 +1431,7 @@ input[type="email"]:focus-visible {
 
 .price-toggle:hover,
 .price-toggle:focus {
-  background-color: #f6f2f2;
+  background-color: #F2F2F2;
 }
 
 .price-toggle:active {
@@ -1445,7 +1448,7 @@ input[type="email"]:focus-visible {
 }
 
 .filter-button-reset:focus-visible {
-  color: #ffffff;
+  color: #FFFFFF;
   outline: 3px solid #83B3D3;
 }
 
@@ -1513,7 +1516,7 @@ input[type="email"]:focus-visible {
 }
 
 .popup-close:hover {
-  background-color: #e6e6e6;
+  background-color: #E6E6E6;
 }
 
 .popup-close:focus-visible {
@@ -1522,6 +1525,14 @@ input[type="email"]:focus-visible {
 
 .popup-close:active svg {
   opacity: 0.3;
+}
+
+.date-input:hover {
+  background-color: #E6E6E6;
+}
+
+.date-input:focus-visible {
+  outline: 3px solid #83B3D3;
 }
 
 .counter-button:hover .counter-icon {
