@@ -283,6 +283,7 @@ body {
 .advantages-item-description {
   margin: 0;
   text-align: center;
+  word-spacing: -0.02em;
 }
 
 .advantages-item-container {
