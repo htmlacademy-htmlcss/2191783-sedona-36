@@ -1138,7 +1138,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 16px;
+  top: 14px;
   right: 20px;
   width: 20px;
   height: 20px;
@@ -1177,6 +1177,7 @@ body {
 }
 
 .kids-label {
+  position: relative;
   width: 131px;
 }
 
@@ -1223,7 +1224,7 @@ body {
 
 .counter-icon {
   fill: #756157;
-  opacity: 0.3;
+  fill-opacity: 0.3;
 }
 
 .counter-button.minus {
@@ -1237,6 +1238,9 @@ body {
 }
 
 .info-button {
+  position: absolute;
+  top: 11px;
+  left: 58px;
   width: 26px;
   height: 26px;
   background-color: #83b3d3;
@@ -1553,7 +1557,7 @@ body {
 
 .counter-button:hover .counter-icon {
   fill: #000000;
-  opacity: 1;
+  fill-opacity: 1;
 }
 
 .counter-button:active .counter-icon {
